@@ -4,26 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e58c54c-3e77-4a75-b707-ed61ffb05faf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javatuples_javatuples_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IvanTasks.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/StreamAvtobusi/Bus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/StreamAvtobusi/BusServiceCollector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/StreamAvtobusi/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/StreamAvtobusi/StreamTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/StreamAvtobusi/Town.java" afterDir="false" />
+    <list default="true" id="0e58c54c-3e77-4a75-b707-ed61ffb05faf" name="Changes" comment="Basic implementation w/o Collector + basic Collector implementation that works for only boarding passengers.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StreamAvtobusi/BusServiceCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StreamAvtobusi/BusServiceCollector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StreamAvtobusi/StreamTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StreamAvtobusi/StreamTask.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +19,13 @@
       <list>
         <option value="Class" />
       </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
     </option>
   </component>
   <component name="MarkdownSettingsMigration">
@@ -90,11 +81,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673872496630</updated>
-      <workItem from="1673872497701" duration="18377000" />
+      <workItem from="1673872497701" duration="25168000" />
     </task>
+    <task id="LOCAL-00001" summary="Basic implementation w/o Collector + basic Collector implementation that works for only boarding passengers.">
+      <created>1673962811322</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673962811322</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Basic implementation w/o Collector + basic Collector implementation that works for only boarding passengers." />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic implementation w/o Collector + basic Collector implementation that works for only boarding passengers." />
   </component>
 </project>

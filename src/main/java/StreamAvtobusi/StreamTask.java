@@ -1,15 +1,12 @@
 package StreamAvtobusi;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 
 public class StreamTask {
 
     //This is a simple list of town names;
-    protected static List<String> towns = new LinkedList<String>() {
+    protected static ArrayList<String> towns = new ArrayList<String>() {
         {
             add("Atina");
             add("Blagoevgrad");
@@ -59,7 +56,7 @@ public class StreamTask {
     }
 
     private static void testMyCollector(){
-        Map<String, Integer> returnTable =  people.stream().collect(BusServiceCollector.toCityStats());
+        Map<String, List<Integer>> returnTable =  people.stream().collect(BusServiceCollector.toCityStats(towns));
         System.out.println(returnTable);
     }
 
