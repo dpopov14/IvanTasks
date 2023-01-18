@@ -6,7 +6,7 @@ import java.util.*;
 public class StreamTask {
 
     //This is a simple list of town names;
-    protected static ArrayList<String> towns = new ArrayList<String>() {
+    protected static ArrayList<String> towns = new ArrayList<>() {
         {
             add("Atina");
             add("Blagoevgrad");
@@ -16,7 +16,7 @@ public class StreamTask {
         }
     };
     //This is a list of passengers and their journeys
-    protected static List<Person> people = new LinkedList<Person>() {
+    protected static List<Person> people = new LinkedList<>() {
         {
             add(new Person("Asen", "Atina", "Blagoevgrad"));
             add(new Person("Boris", "Atina", "Varna"));
@@ -63,16 +63,11 @@ public class StreamTask {
 
     public static void main(String[] args) {
 
-        //The first task that basically used two streams as two nested loops:
-//        showBusInfo(people, towns);
-            testMyCollector();
+        //The first task that basically used two forEach methods as two nested loops:
+        showBusInfo(people, towns);
 
-//         <City, List<Long> - качили се, слезли, продължили
-//        Supplier - тази структура, в която ще върнем
-//        Accumulator - тази структура, което ще чете резултата и ще натрупва
-
-
-
+        //The second task that uses a BusServiceCollector
+        testMyCollector();
 
     }
 }

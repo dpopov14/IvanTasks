@@ -9,6 +9,12 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Collector;
 
+/**\
+ * <City, List<Long>> - качили се, слезли, продължили
+ * Supplier - тази структура, в която ще върнем
+ * Accumulator - тази структура, което ще чете резултата и ще натрупва
+ */
+
 public class BusServiceCollector implements Collector<Person,// T Ivan: kachil se: Petrich, Slqzul: Varna
         Map<String, List<Integer>>,// A grad | kachili se | slezli | produljili
         Map<String, List<Integer>>>// R grad | kachili se | slezli | produljili
