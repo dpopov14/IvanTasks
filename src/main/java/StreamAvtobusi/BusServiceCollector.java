@@ -19,12 +19,12 @@ public class BusServiceCollector implements Collector<Person,// T Ivan: kachil s
         Map<String, List<Integer>>,// A grad | kachili se | slezli | produljili
         Map<String, List<Integer>>>// R grad | kachili se | slezli | produljili
 {
-    static ArrayList<String> orderedTowns; //Atina, Blagoevgrad, Sofia, Plovdiv, Varna, Burgas
+     static List<String> orderedTowns; //Atina, Blagoevgrad, Sofia, Plovdiv, Varna, Burgas
 //    Burgas should not appear in the final output as there are
 //                           // no people
 
 
-    public static BusServiceCollector toCityStats(ArrayList<String> orderedTownsArgument) {
+    public static BusServiceCollector toCityStats(List<String> orderedTownsArgument) {
         orderedTowns = orderedTownsArgument;
         return new BusServiceCollector();
     }
@@ -38,9 +38,8 @@ public class BusServiceCollector implements Collector<Person,// T Ivan: kachil s
     }
 
     /**
-     * Represents an operation that accepts two input arguments and returns no result.
      * This is the two-arity specialization of Consumer. Unlike most other functional interfaces,
-     * BiConsumer is expected to operate via side-effects.
+     * BiConsumer is expected to operate via side-effects & can not be p....
      * This is a functional interface whose functional method is accept(Object, Object).
      *
      * @return
@@ -104,9 +103,7 @@ public class BusServiceCollector implements Collector<Person,// T Ivan: kachil s
 
     public List<Integer> sum(List<Integer> startingList, List<Integer> secondList) {
         for (int i = 0; i < startingList.size(); i++) {
-            int res = 0;
-            res = startingList.get(i) + secondList.get(i);
-            startingList.set(i, res);
+            startingList.set(i, startingList.get(i) + secondList.get(i));
         }
         return startingList;
     }

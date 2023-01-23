@@ -1,22 +1,17 @@
 package StreamAvtobusi;
 
 import java.util.*;
+import java.util.stream.Stream;
 
 
 public class StreamTask {
 
     //This is a simple list of town names;
-    protected static ArrayList<String> towns = new ArrayList<>() {
-        {
-            add("Atina");
-            add("Blagoevgrad");
-            add("Sofia");
-            add("Plovdiv");
-            add("Varna");
-        }
-    };
+    private  List<String> towns
+            = Stream.of("Atina","Blagoevgrad","Sofia","Plovdiv","Varna").toList();
+
     //This is a list of passengers and their journeys
-    protected static List<Person> people = new LinkedList<>() {
+    private  List<Person> people = new LinkedList<>() {
         {
             add(new Person("Asen", "Atina", "Blagoevgrad"));
             add(new Person("Boris", "Atina", "Varna"));
@@ -29,7 +24,7 @@ public class StreamTask {
         }
     };
 
-    private static void showBusInfo(List<Person> people, List<String> towns){
+    private  void showBusInfo(){
         //Should return a list of type:
         /** Town | Boarding | Departing | Continued on */
 
@@ -55,19 +50,14 @@ public class StreamTask {
 
     }
 
-    private static void testMyCollector(){
-        Map<String, List<Integer>> returnTable =  people.stream().collect(BusServiceCollector.toCityStats(towns));
-        System.out.println(returnTable);
-    }
-
 
     public static void main(String[] args) {
-
+        StreamTask streamTask = new StreamTask();
         //The first task that basically used two forEach methods as two nested loops:
-        showBusInfo(people, towns);
+//        streamTask.showBusInfo();
 
         //The second task that uses a BusServiceCollector
-        testMyCollector();
+        System.out.println(streamTask.people.stream().collect(BusServiceCollector.toCityStats(streamTask.towns)));
 
     }
 }

@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e58c54c-3e77-4a75-b707-ed61ffb05faf" name="Changes" comment="Number of people that continued after each stop is now implemented. The method works with an ordered list of towns that can be passed when the static method BusServiceCollector.toCityStats() is called when the stream is used.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/StreamAvtobusi/SmartBus.java" afterDir="false" />
+    <list default="true" id="0e58c54c-3e77-4a75-b707-ed61ffb05faf" name="Changes" comment="Small fixes - removed redundant code and added a few descriptive comments.">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IvanTasks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/IvanTasks.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/StreamAvtobusi/BusServiceCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StreamAvtobusi/BusServiceCollector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/StreamAvtobusi/StreamTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StreamAvtobusi/StreamTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StreamAvtobusi/Town.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +85,10 @@
       <option name="presentableId" value="Default" />
       <updated>1673872496630</updated>
       <workItem from="1673872497701" duration="25970000" />
-      <workItem from="1673971655980" duration="352000" />
+      <workItem from="1673971655980" duration="1843000" />
+      <workItem from="1674126991533" duration="30000" />
+      <workItem from="1674127031910" duration="20000" />
+      <workItem from="1674463992152" duration="2526000" />
     </task>
     <task id="LOCAL-00001" summary="Basic implementation w/o Collector + basic Collector implementation that works for only boarding passengers.">
       <created>1673962811322</created>
@@ -100,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673971626305</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Small fixes - removed redundant code and added a few descriptive comments.">
+      <created>1674032178690</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674032178690</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +120,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Basic implementation w/o Collector + basic Collector implementation that works for only boarding passengers." />
     <MESSAGE value="Number of people that continued after each stop is now implemented. The method works with an ordered list of towns that can be passed when the static method BusServiceCollector.toCityStats() is called when the stream is used." />
-    <option name="LAST_COMMIT_MESSAGE" value="Number of people that continued after each stop is now implemented. The method works with an ordered list of towns that can be passed when the static method BusServiceCollector.toCityStats() is called when the stream is used." />
+    <MESSAGE value="Small fixes - removed redundant code and added a few descriptive comments." />
+    <option name="LAST_COMMIT_MESSAGE" value="Small fixes - removed redundant code and added a few descriptive comments." />
   </component>
 </project>
