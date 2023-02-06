@@ -1,7 +1,10 @@
 package StreamAvtobusi;
 
+import CustomStream.CustomStream;
+
 import java.util.*;
 import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 
 public class StreamTask {
@@ -58,6 +61,10 @@ public class StreamTask {
 
         //The second task that uses a BusServiceCollector
         System.out.println(streamTask.people.stream().collect(BusServiceCollector.toCityStats(streamTask.towns)));
+
+        CustomStream<Integer> customStream = new CustomStream<>(new Integer[] {1, 2, 3, 4, 5});
+        Stream<Integer> stream = StreamSupport.stream(customStream, false);
+
 
     }
 }

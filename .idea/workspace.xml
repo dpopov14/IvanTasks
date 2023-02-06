@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e58c54c-3e77-4a75-b707-ed61ffb05faf" name="Changes" comment="Small fixes - removed redundant code and added a few descriptive comments.">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="0e58c54c-3e77-4a75-b707-ed61ffb05faf" name="Changes" comment="Ivan major fixes:&#10;Removed static vars;&#10;Inlined everything possible">
+      <change afterPath="$PROJECT_DIR$/src/main/java/CustomStream/CustomStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CustomStream/EntitiesMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CustomStream/MyEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CustomStream/MyEntityMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CustomStream/ResultSetStream.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IvanTasks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/IvanTasks.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StreamAvtobusi/BusServiceCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StreamAvtobusi/BusServiceCollector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/StreamAvtobusi/StreamTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StreamAvtobusi/StreamTask.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -40,22 +42,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="CustomStream" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="CustomStream" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="StreamTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="StreamAvtobusi.StreamTask" />
@@ -88,7 +99,8 @@
       <workItem from="1673971655980" duration="1843000" />
       <workItem from="1674126991533" duration="30000" />
       <workItem from="1674127031910" duration="20000" />
-      <workItem from="1674463992152" duration="2526000" />
+      <workItem from="1674463992152" duration="7093000" />
+      <workItem from="1675676995997" duration="36000" />
     </task>
     <task id="LOCAL-00001" summary="Basic implementation w/o Collector + basic Collector implementation that works for only boarding passengers.">
       <created>1673962811322</created>
@@ -111,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674032178690</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Ivan major fixes:&#10;Removed static vars;&#10;Inlined everything possible">
+      <created>1674466775514</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674466775514</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +140,7 @@
     <MESSAGE value="Basic implementation w/o Collector + basic Collector implementation that works for only boarding passengers." />
     <MESSAGE value="Number of people that continued after each stop is now implemented. The method works with an ordered list of towns that can be passed when the static method BusServiceCollector.toCityStats() is called when the stream is used." />
     <MESSAGE value="Small fixes - removed redundant code and added a few descriptive comments." />
-    <option name="LAST_COMMIT_MESSAGE" value="Small fixes - removed redundant code and added a few descriptive comments." />
+    <MESSAGE value="Ivan major fixes:&#10;Removed static vars;&#10;Inlined everything possible" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ivan major fixes:&#10;Removed static vars;&#10;Inlined everything possible" />
   </component>
 </project>
