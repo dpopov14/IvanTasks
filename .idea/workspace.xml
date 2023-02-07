@@ -4,14 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e58c54c-3e77-4a75-b707-ed61ffb05faf" name="Changes" comment="Ivan major fixes:&#10;Removed static vars;&#10;Inlined everything possible">
-      <change afterPath="$PROJECT_DIR$/src/main/java/CustomStream/CustomStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CustomStream/EntitiesMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CustomStream/MyEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CustomStream/MyEntityMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CustomStream/ResultSetStream.java" afterDir="false" />
+    <list default="true" id="0e58c54c-3e77-4a75-b707-ed61ffb05faf" name="Changes" comment="Created:&#10;- EntitiesMapper&#10;- CustomStream&#10;- ResultSetStream&#10;Worked on:&#10;- StramTask">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FactoriesAndBuilders/Cashier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FactoriesAndBuilders/FactoryAndBuilderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FactoriesAndBuilders/Shopper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FactoriesAndBuilders/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FactoriesAndBuilders/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FactoriesAndBuilders/UserEntityObjectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Generics/AB/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Generics/AB/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Generics/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Generics/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Generics/Seller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Generics/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Generics/UserType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StreamAvtobusi/StreamTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StreamAvtobusi/StreamTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IvanTasks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/IvanTasks.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +32,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -32,6 +44,7 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -42,23 +55,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="CustomStream" />
@@ -67,7 +80,46 @@
       <recent name="CustomStream" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.FactoryAndBuilderTest">
+    <configuration name="B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Generics.AB.B" />
+      <module name="IvanTasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Generics.AB.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FactoryAndBuilderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FactoriesAndBuilders.FactoryAndBuilderTest" />
+      <module name="IvanTasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="FactoriesAndBuilders.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GenericsTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Generics.GenericsTester" />
+      <module name="IvanTasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Generics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StreamTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="StreamAvtobusi.StreamTask" />
       <module name="IvanTasks" />
@@ -83,6 +135,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FactoryAndBuilderTest" />
+        <item itemvalue="Application.GenericsTester" />
+        <item itemvalue="Application.B" />
         <item itemvalue="Application.StreamTask" />
       </list>
     </recent_temporary>
@@ -101,6 +156,15 @@
       <workItem from="1674127031910" duration="20000" />
       <workItem from="1674463992152" duration="7093000" />
       <workItem from="1675676995997" duration="36000" />
+      <workItem from="1675677049344" duration="5139000" />
+      <workItem from="1675685762156" duration="302000" />
+      <workItem from="1675686075960" duration="73000" />
+      <workItem from="1675686156948" duration="69000" />
+      <workItem from="1675686237591" duration="20000" />
+      <workItem from="1675686275583" duration="565000" />
+      <workItem from="1675686858901" duration="490000" />
+      <workItem from="1675687360572" duration="8151000" />
+      <workItem from="1675755550274" duration="10422000" />
     </task>
     <task id="LOCAL-00001" summary="Basic implementation w/o Collector + basic Collector implementation that works for only boarding passengers.">
       <created>1673962811322</created>
@@ -130,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674466775514</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Created:&#10;- EntitiesMapper&#10;- CustomStream&#10;- ResultSetStream&#10;Worked on:&#10;- StramTask">
+      <created>1675677195439</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675677195440</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +212,7 @@
     <MESSAGE value="Number of people that continued after each stop is now implemented. The method works with an ordered list of towns that can be passed when the static method BusServiceCollector.toCityStats() is called when the stream is used." />
     <MESSAGE value="Small fixes - removed redundant code and added a few descriptive comments." />
     <MESSAGE value="Ivan major fixes:&#10;Removed static vars;&#10;Inlined everything possible" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ivan major fixes:&#10;Removed static vars;&#10;Inlined everything possible" />
+    <MESSAGE value="Created:&#10;- EntitiesMapper&#10;- CustomStream&#10;- ResultSetStream&#10;Worked on:&#10;- StramTask" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created:&#10;- EntitiesMapper&#10;- CustomStream&#10;- ResultSetStream&#10;Worked on:&#10;- StramTask" />
   </component>
 </project>
